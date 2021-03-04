@@ -1,0 +1,17 @@
+.namr-content {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 88vh;
+    border-radius: 8px;
+    width: 97%;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 796px)  {
+    .namr-content {
+        display: flex;
+        height: 90vh;
+        flex-flow: column nowrap;
+    }
+}

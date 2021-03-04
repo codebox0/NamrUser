@@ -1,0 +1,31 @@
+
+.namr-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(
+            187deg
+            , #efefef 10%, #ffffff 100%);
+}
+
+
+.user-card-img {
+    float: right;
+}
+
+@keyframes card-reveal {
+    from {
+        opacity: 0;
+        width: 110%;
+        margin-left: 50px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0;
+        width: 80%;
+    }
+}
+

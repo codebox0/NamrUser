@@ -1,0 +1,63 @@
+
+.namr-list-item {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: 1px dashed black;
+    box-shadow: -1px 6px 2px #4565204a;
+    animation: card-user-list-render ease-in 0.8s;
+    border-bottom: 3px solid #a28a8a;
+    border-top: 3px solid #a28a8a;
+    cursor: pointer;
+}
+
+.namr-list-item:hover {
+    box-shadow: inset -1px 6px 2px #4565204a;
+    width: 85%;
+    animation: card-user-list-render ease-in 0.8s;
+}
+
+.namr-list-item img {
+    height: 54px;
+    float: left;
+}
+
+
+
+@keyframes card-user-list-render {
+    from {
+        opacity: 0;
+        width: 85%;
+        margin-top: 5px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0;
+        width: 80%;
+    }
+}
+
+
+/*ScrollBar zone */
+.namr-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 3px 0;
+    background-color: #F5F5F5;
+}
+
+.namr-list::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.namr-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #456520;
+}
+
+/*End ScrollBar zone */
